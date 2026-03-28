@@ -111,7 +111,6 @@ function toggleAnimation(i){
       removeClass(wrap, animation[x].getAttribute('data-animation'));
     }
   }
-  
 }
 
 for (var x = 0; x < zoom.length; x++){
