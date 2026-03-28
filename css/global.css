@@ -1,7 +1,7 @@
 body {
     background-color: #000000;
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 0.2rem;
     margin: 0;
     overflow: hidden;
@@ -25,7 +25,7 @@ body {
 }
 
 h2 {
-    font-size: 15vmin;
+    font-size: 5vmin;
     margin: 0;
 }
 
@@ -150,6 +150,7 @@ h2 {
     transition: opacity 0.3s cubic-bezier(0.55, 0, 0.1, 1);
     user-select: none;
     will-change: opacity;
+    font-size: 12px;
 }
 
 .panel__nav--up {
