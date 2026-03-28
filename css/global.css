@@ -1,19 +1,11 @@
-/* test */
-/* .img {
-    position: absolute;
-    top: 75%;
-    left: 75%;
-} */
-
-/* Global */
 body {
     background-color: #000000;
     color: white;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     letter-spacing: 0.2rem;
     margin: 0;
     overflow: hidden;
-    perspective: 1000px; 
+    perspective: 1000px;
     text-transform: uppercase;
 }
 
@@ -28,19 +20,19 @@ body {
 .panel-wrap {
     height: 100vh;
     width: 100vw;
-/*  perspective: 2000px; */
+    perspective: 2000px;
     transition: transform 0.3s cubic-bezier(0.55, 0, 0.1, 1);
 }
 
 h2 {
-  font-size: 15vmin;
-  margin: 0;
+    font-size: 15vmin;
+    margin: 0;
 }
 
 .panel-wrap.animate--shrink,
 .panel-wrap.animate--tilt,
 .panel-wrap.animate--tilt2 {
-  transition: transform 0.3s cubic-bezier(0.55, 0, 0.1, 1) 0.3s;
+    transition: transform 0.3s cubic-bezier(0.55, 0, 0.1, 1) 0.3s;
 }
 
 .panel {
@@ -135,7 +127,7 @@ h2 {
     left: 50%;
     opacity: 0.2;
     position: absolute;
-    top: 50%;
+    top: 40%;
     transform: translateX(-50%) translateY(-50%) translateY(-12vmin);
     transition: opacity 0.3s cubic-bezier(0.55, 0, 0.1, 1);
     user-select: none;
@@ -152,100 +144,100 @@ h2 {
 
 /* navigation text (delete later) */
 .panel__nav {
-  cursor: pointer;
-  opacity: 0.2;
-  position: absolute;
-  transition: opacity 0.3s cubic-bezier(0.55, 0, 0.1, 1);
-  user-select: none;
-  will-change: opacity;
+    cursor: pointer;
+    opacity: 0.2;
+    position: absolute;
+    transition: opacity 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+    user-select: none;
+    will-change: opacity;
 }
 
 .panel__nav--up {
-  left: 50%;
-  top: 1rem;
-  transform: translateX(-50%);
+    left: 50%;
+    top: 1rem;
+    transform: translateX(-50%);
 }
 
 .panel__nav--left {
-  left: 1rem;
-  top: 50%;
-  transform: translateY(-50%) rotate(-90deg) translateX(-100%);
-  transform-origin: top left;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg) translateX(-100%);
+    transform-origin: top left;
 }
 
 .panel__nav--left-top {
-  left: 1rem;
-  top: 1rem;
+    left: 1rem;
+    top: 1rem;
 }
 
 .panel__nav--left-down {
-  bottom: 1rem;
-  left: 1rem;
+    bottom: 1rem;
+    left: 1rem;
 }
 
 .panel__nav--right {
-  right: 1rem;
-  top: 50%;
-  transform: translateY(-50%) rotate(90deg) translateX(100%);
-  transform-origin: top right;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg) translateX(100%);
+    transform-origin: top right;
 }
 
 .panel__nav--right-top {
-  right: 1rem;
-  top: 1rem;
+    right: 1rem;
+    top: 1rem;
 }
 
 .panel__nav--right-down {
-  bottom: 1rem;
-  right: 1rem;
+    bottom: 1rem;
+    right: 1rem;
 }
 
 .panel__nav--down {
-  bottom: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .panel__nav:hover {
-  opacity: 1;
+    opacity: 1;
 }
 
 /* animation list (delete later) */
 
 .panel__animation-list {
-  font-size: 3.3vmin;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%) translateY(14vmin);
+    font-size: 3.3vmin;
+    left: 50%;
+    position: absolute;
+    top: 60%;
+    transform: translateX(-50%) translateY(-50%) translateY(14vmin);
 }
 
 .panel__animation-list span {
-  cursor: pointer;
-  display: inline-block;
-  opacity: 0.2;
-  position: relative;
-  transition: opacity 0.3s cubic-bezier(0.55, 0, 0.1, 1);
-  user-select: none;
+    cursor: pointer;
+    display: inline-block;
+    opacity: 0.2;
+    position: relative;
+    transition: opacity 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+    user-select: none;
 }
 
 .panel__animation-list span:after {
-  border-bottom: 0.3vmin solid transparent;
-  bottom: 0;
-  content: "";
-  left: -1px;
-  position: absolute;
-  right: 0;
-  transition: border-color 0.3s cubic-bezier(0.55, 0, 0.1, 1);
-  width: 100%;
+    border-bottom: 0.3vmin solid transparent;
+    bottom: 0;
+    content: "";
+    left: -1px;
+    position: absolute;
+    right: 0;
+    transition: border-color 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+    width: 100%;
 }
 
 .panel__animation-list span.active,
 .panel__animation-list span:hover {
-  opacity: 1;
+    opacity: 1;
 }
 
 .panel__animation-list span.active:after,
 .panel__animation-list span:hover:after {
-  border-color: white;
+    border-color: white;
 }
