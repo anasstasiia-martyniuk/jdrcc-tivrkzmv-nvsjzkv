@@ -135,7 +135,6 @@ function setPanelAndZoom(e){
   zoomIn();
 }
 
-
 function zoomIn(){
   for (var x = 0; x < panel.length; x++){
     panel[x].removeEventListener('click', setPanelAndZoom);
