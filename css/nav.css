@@ -30,10 +30,10 @@
 
 .pole-line {
     width: 56px;
-    height: 10px;
+    height: 15px;
     position: absolute;
     left: -6px;
-    top: 75px;
+    top: 70px;
     z-index: 1;
     background-color: rgb(123, 123, 123);
 }
@@ -64,10 +64,25 @@
 
 .sign__view-all{
     background-color: rgb(224, 22, 146);
+    padding: 3px 10px 3px 10px;
+    border: 2px white solid;
     width: 90px;
     height: 60px;
     top: 90px;
     left: -80px;
+}
+
+.sign__about-us{
+    background-color: rgb(23, 23, 205);
+}
+
+.sign__join{
+    background-color: rgb(96, 15, 15);
+    width: 160px;
+    height: 160px;
+    top: 390px;
+    left: -115px;
+    clip-path: polygon(48% 0, 73% 57%, 82% 45%, 92% 84%, 57% 88%, 64% 72%, 25% 39%);
 }
 
 @media only screen and (min-width: 768px){
@@ -75,5 +90,12 @@
         width: 150px;
         height: 80px;
         left: -140px;
+    }
+
+    .sign__join {
+        width: 200px;
+        height: 200px;
+        top: 390px;
+        left: -150px;
     }
 }
