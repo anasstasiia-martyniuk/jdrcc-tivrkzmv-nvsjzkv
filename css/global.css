@@ -27,15 +27,12 @@ body {
     transition: transform 0.3s cubic-bezier(0.55, 0, 0.1, 1);
 }
 
-h2 {
-    font-size: 5vmin;
-    margin: 0;
+.panel-wrap.animate {
+    transition: transform 0.6s cubic-bezier(0.55, 0, 0.1, 1) 0.3s;
 }
 
-.panel-wrap.animate--shrink,
-.panel-wrap.animate--tilt,
-.panel-wrap.animate--tilt2 {
-    transition: transform 0.6s cubic-bezier(0.55, 0, 0.1, 1) 0.3s;
+.animate .panel {
+    transform: scale(0.9);
 }
 
 .panel {
@@ -67,19 +64,6 @@ h2 {
 .show-all .panel:hover:before {
     background-color: rgba(255, 255, 255, 0.1);
     cursor: pointer;
-}
-
-/* Animations */
-.animate--shrink.animate .panel {
-    transform: scale(0.9);
-}
-
-.animate--tilt.animate .panel {
-    transform: scale(0.6) rotateY(-25deg);
-}
-
-.animate--tilt2.animate .panel {
-    transform: scale(0.8) rotateX(25deg);
 }
 
 .panel h2 {
@@ -125,7 +109,7 @@ h2 {
     top: -200%;
 }
 
-.panel__zoom {
+/* .panel__zoom {
     cursor: pointer;
     left: 50%;
     opacity: 0.2;
@@ -139,16 +123,16 @@ h2 {
 
 .panel__zoom:hover {
     opacity: 1;
-}
-
+} */
+/* 
 .show-all .panel__zoom {
     pointer-events: none;
-}
+} */
 
 /* navigation text (delete later) */
 .panel__nav {
     cursor: pointer;
-    opacity: 0.2;
+    opacity: 0.5;
     position: absolute;
     transition: opacity 0.3s cubic-bezier(0.55, 0, 0.1, 1);
     user-select: none;
@@ -206,42 +190,3 @@ h2 {
     opacity: 1;
 }
 
-/* animation list (delete later) */
-
-.panel__animation-list {
-    font-size: 3.3vmin;
-    left: 50%;
-    position: absolute;
-    top: 60%;
-    transform: translateX(-50%) translateY(-50%) translateY(14vmin);
-}
-
-.panel__animation-list span {
-    cursor: pointer;
-    display: inline-block;
-    opacity: 0.2;
-    position: relative;
-    transition: opacity 0.3s cubic-bezier(0.55, 0, 0.1, 1);
-    user-select: none;
-}
-
-.panel__animation-list span:after {
-    border-bottom: 0.3vmin solid transparent;
-    bottom: 0;
-    content: "";
-    left: -1px;
-    position: absolute;
-    right: 0;
-    transition: border-color 0.3s cubic-bezier(0.55, 0, 0.1, 1);
-    width: 100%;
-}
-
-.panel__animation-list span.active,
-.panel__animation-list span:hover {
-    opacity: 1;
-}
-
-.panel__animation-list span.active:after,
-.panel__animation-list span:hover:after {
-    border-color: white;
-}

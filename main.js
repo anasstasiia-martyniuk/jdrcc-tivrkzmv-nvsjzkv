@@ -1,4 +1,5 @@
 // Global
+
 var win = window,
     doc = document;
 
@@ -35,8 +36,6 @@ var nav_up = doc.getElementsByClassName('js-up'),
     nav_left = doc.getElementsByClassName('js-left'),
     nav_right = doc.getElementsByClassName('js-right'),
     nav_down = doc.getElementsByClassName('js-down');
-
-var animation = doc.getElementsByClassName('js-animation');
 
 // Tracking
 var pos_x = 0,
@@ -91,27 +90,35 @@ for (var x = 0; x < nav_down.length; x++) {
     nav_down[x].addEventListener('click', moveDown);
 }
 
-// Animations
+//Movement on arrows
 
-for (var x = 0; x < animation.length; x++) {
-  ( function(_x){
-    animation[_x].addEventListener('click', function(){
-      toggleAnimation(_x);
-    });
-  })(x);
-}
+// function register() {
+//   window.addEventListener("keydown", (e) => {
+//       this.someMethod(e);
+//     });
+// }
 
-function toggleAnimation(i){
-  for (var x = 0; x < animation.length; x++){
-    if (i === x){
-      addClass(animation[x], 'active');
-      addClass(wrap, animation[x].getAttribute('data-animation'));
-    } else {
-      removeClass(animation[x], 'active');
-      removeClass(wrap, animation[x].getAttribute('data-animation'));
-    }
-  }
-}
+// function someMethod(e) {
+//   switch (e.code) {
+//     case "ArrowUp":
+//       moveUp();
+//       break;
+//     case "ArrowDown":
+//       moveDown();
+//       break;
+//     case "ArrowRight":
+//       moveRight();
+//       break;
+//     case "ArrowLeft":
+//       moveLeft();
+//       break;
+//   }
+// }
+
+// register();
+
+
+// Zoom
 
 for (var x = 0; x < zoom.length; x++){
   zoom[x].addEventListener('click', zoomOut);   
