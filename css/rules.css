@@ -26,6 +26,7 @@
 
 .rules-list > li{
     width: fit-content;
+    cursor: pointer;
 }
 
 .rules-list>li:nth-child(1) {
@@ -86,7 +87,8 @@
 }
 
 .reversed-num{
-    justify-self: end;
+    top: 0;
+    right: 0;
     text-align: end;
     padding-left: 10px;
     border-radius: 0% 0 0 70%;
@@ -207,5 +209,6 @@
         justify-self: start;
         padding-left: 10px;
         border-radius: 0 0 70% 0;
+        left: 0;
     }
 }
