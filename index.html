@@ -9,27 +9,37 @@
 <body>
     <div class="site-wrap">
         <div class="panel-wrap animate--none">
-            <!-- navigation -->
+            <!--#region navigation -->
             <div class="panel panel-main" data-x-pos="0" data-y-pos="0">
                 <span class="panel__nav panel__nav--up js-up">up</span>
-                <span class="panel__nav panel__nav--right-top js-up js-right">up/right</span>
-                <span class="panel__nav panel__nav--left-top js-up js-left">up/left</span>
-                <span class="panel__nav panel__nav--left js-left">left</span>
-                <span class="panel__nav panel__nav--right js-right">right</span>
                 <span class="panel__nav panel__nav--left-down js-down js-left">down/left</span>
                 <span class="panel__nav panel__nav--down js-down">down</span>
                 <div class="nav-container">
-                    <div class="js-zoom sign sign__view-all">View <br> all</div>
-                    <div class="js-left sign sign__about-us"></div>
-                    <div class="js-down js-right sign sign__join"></div>
+                    <div class="js-zoom sign sign__view-all">
+                        <img src="./img/nav/view-all-sign.png">
+                    </div>
+                    <div class="js-up js-right sign sign__rules">
+                        <img src="./img/nav/rules-sign.png">
+                    </div>
+                    <div class="js-right sign sign__about-us">
+                        <img src="./img/nav/about-us-sign.png">
+                    </div>
+                    <div class="js-up js-left sign sign__motivation">
+                        <img src="./img/nav/start-sign.png">
+                    </div>
+                    <div class="js-left sign sign__news">
+                        <img src="./img/nav/news-sign.png">
+                    </div>
+                    <div class="js-down js-right sign sign__join">
+
+                    </div>
                     <div class="pole-wrap">
-                        <div class="pole-top"></div>
-                        <div class="pole-line"></div>
-                        <div class="pole"></div>
+                        <img src="./img/nav/pole.png" class="pole">
                     </div>
                 </div>
             </div>
-            <!-- up -->
+            <!-- #endregion navigation -->
+            <!-- #region up -->
             <div class="panel" data-x-pos="0" data-y-pos="1">
                 <span class="panel__nav panel__nav--left js-left">left</span>
                 <span class="panel__nav panel__nav--right js-right">right</span>
@@ -38,14 +48,16 @@
                 <span class="panel__nav panel__nav--down js-down">down</span>
                 <h2>??</h2>  
             </div>
-            <!-- motivation text -->
+            <!-- #endregion up -->
+            <!-- #region motivation -->
             <div class="panel" data-x-pos="-1" data-y-pos="1">
                 <span class="panel__nav panel__nav--right-down js-down js-right">down/right</span>
                 <span class="panel__nav panel__nav--right js-right">right</span>
                 <span class="panel__nav panel__nav--down js-down">down</span>
                 <h2>motivatie om te komen</h2>
             </div>
-            <!-- rules -->
+            <!-- #endregion motivation -->
+            <!-- #region rules -->
             <div class="panel panel-rules" data-x-pos="1" data-y-pos="1">
                 <span class="panel__nav panel__nav--left-down js-down js-left">down/left</span>
                 <span class="panel__nav panel__nav--left js-left">left</span>
@@ -100,7 +112,8 @@
                     </ul>
                 </div>
             </div>
-            <!-- news -->
+            <!-- #endregion rules -->
+            <!-- #region news -->
             <div class="panel panel-news" data-x-pos="-1" data-y-pos="0">
                 <span class="panel__nav panel__nav--up js-up">up</span>
                 <span class="panel__nav panel__nav--right-top js-up js-right">up/right</span>
@@ -109,31 +122,35 @@
                 <span class="panel__nav panel__nav--down js-down">down</span>
                 <h2>news</h2>
             </div>
-            <!-- down left -->
+            <!-- #endregion news -->
+            <!-- #region down left -->
             <div class="panel" data-x-pos="-1" data-y-pos="-1">
                 <span class="panel__nav panel__nav--up js-up">up</span>
                 <span class="panel__nav panel__nav--right-top js-up js-right">up/right</span>
                 <span class="panel__nav panel__nav--right js-right">right</span>
                 <h2>??</h2>
             </div>
-            <!-- criteria for joining -->
+            <!-- #endregion down left -->
+            <!-- #region criteria for joining -->
             <div class="panel" data-x-pos="1" data-y-pos="-1">
                 <span class="panel__nav panel__nav--up js-up">up</span>
                 <span class="panel__nav panel__nav--left-top js-up js-left">up/left</span>
                 <span class="panel__nav panel__nav--left js-left">left</span>
                 <h2>Deelname criteria</h2>
             </div>
-            <!-- about us -->
+            <!-- #endregion criteria for joining -->
+            <!-- #region about us -->
             <div class="panel panel-about-us" data-x-pos="1" data-y-pos="0">
                 <span class="panel__nav panel__nav--up js-up">up</span>
                 <span class="panel__nav panel__nav--left-top js-up js-left">up/left</span>
                 <span class="panel__nav panel__nav--left js-left">left</span>
                 <span class="panel__nav panel__nav--left-down js-down js-left">down/left</span>
                 <span class="panel__nav panel__nav--down js-down">down</span>
-
+                <h2>about us</h2>
                 <div class="sticker-box"></div>
             </div>
-            <!-- contact -->
+            <!-- #endregion about us -->
+            <!-- #region contact -->
             <div class="panel" data-x-pos="0" data-y-pos="-1">
                 <span class="panel__nav panel__nav--up js-up">up</span>
                 <span class="panel__nav panel__nav--left-top js-up js-left">up/left</span>
@@ -143,11 +160,13 @@
                 <span class="panel__nav panel__nav--down js-down">down</span>
                 <h2>Contact</h2>
             </div>
-            <!-- stickers board?? -->
+            <!-- #endregion contact -->
+            <!-- #region stickers board?? -->
             <div class="panel" data-x-pos="0" data-y-pos="-2">
                 <span class="panel__nav panel__nav--up js-up">up</span>
                 <h2>Sticker bord?</h2>
             </div>
+            <!-- #endregion stickers board?? -->
         </div>
     </div>
     <script src="./main.js"></script>

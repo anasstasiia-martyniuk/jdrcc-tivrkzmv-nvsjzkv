@@ -90,32 +90,32 @@ for (var x = 0; x < nav_down.length; x++) {
     nav_down[x].addEventListener('click', moveDown);
 }
 
-//Movement on arrows
+//Movement on arrows (only for development time)
 
-// function register() {
-//   window.addEventListener("keydown", (e) => {
-//       this.someMethod(e);
-//     });
-// }
+function register() {
+  window.addEventListener("keydown", (e) => {
+      this.someMethod(e);
+    });
+}
 
-// function someMethod(e) {
-//   switch (e.code) {
-//     case "ArrowUp":
-//       moveUp();
-//       break;
-//     case "ArrowDown":
-//       moveDown();
-//       break;
-//     case "ArrowRight":
-//       moveRight();
-//       break;
-//     case "ArrowLeft":
-//       moveLeft();
-//       break;
-//   }
-// }
+function someMethod(e) {
+  switch (e.code) {
+    case "ArrowUp":
+      moveUp();
+      break;
+    case "ArrowDown":
+      moveDown();
+      break;
+    case "ArrowRight":
+      moveRight();
+      break;
+    case "ArrowLeft":
+      moveLeft();
+      break;
+  }
+}
 
-// register();
+register();
 
 
 // Zoom
