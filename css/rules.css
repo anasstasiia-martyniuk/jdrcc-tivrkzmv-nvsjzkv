@@ -26,20 +26,35 @@
 
 .rules-list > li{
     width: fit-content;
-    background-color: blue;
+}
+
+.rules-list>li:nth-child(1) {
+    background-color: #f216b7;
+    box-shadow: 3px 3px 0px 3px #000000, 6px 6px 0px 6px #8aff00;
 }
 
 .rules-list > li:nth-child(2) {
     rotate: 8deg;
     transform: translateX(5px);
+    background-color: #10fee2;
+    box-shadow: 3px 3px 0px 3px #000000, 6px 6px 0px 6px #f216b7;
 }
 
 .rules-list>li:nth-child(3) {
     transform: translateX(-15px);
+    background-color: #6715ff;
+    box-shadow: 3px 3px 0px 3px #000000, 6px 6px 0px 6px #10fee2;
 }
 
 .rules-list>li:nth-child(4) {
-    rotate: 5deg;
+    background-color: #8aff00;
+    box-shadow: 3px 3px 0px 3px #000000, 6px 6px 0px 6px #6715ff;
+    rotate: 4deg;
+}
+
+.rules-icons{
+    width: 50px;
+    height: 50px;
 }
 
 .item-container{
@@ -47,17 +62,24 @@
     height: 100px;
     padding: 15px 20px;
     font-size: 16px;
+    color: black;
+    font-weight: 700;
 }
 
 .reversed-text{
     text-align: end;
+    color: rgb(255, 255, 255);
+}
+
+.rules-icons-box {
+    display: none;
 }
 
 .item-n{
     background-color: rgb(0, 0, 0);
     padding: 6px;
     width: fit-content;
-    border-radius: 0 100% 100% 0;
+    border-radius: 0 0 70% 0;
     font-family: "RockSalt-Regular";
     font-size: 10px;
     position: absolute;
@@ -65,8 +87,9 @@
 
 .reversed-num{
     justify-self: end;
+    text-align: end;
     padding-left: 10px;
-    border-radius: 100% 0 0 100%;
+    border-radius: 0% 0 0 70%;
 }
 
 @media only screen and (min-width: 768px){
@@ -99,17 +122,39 @@
 
     .item-container {
         width: 250px;
-        height: 270px;
+        height: 260px;
         font-size: 20px;
+        margin-top: 15px;
     }
 
     .item-n{
         font-size: 12px;
     }
 
+    .rules-icons-box {
+        border: 2px rgb(0, 0, 0) solid;
+        padding: 15px;
+        border-radius: 50%;
+        width: fit-content;
+        background-color: rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 25px;
+        margin-left: 15px;
+    }
+
+    /* .reversed-text > .rules-icons-box{
+        margin-left: 120px;
+    } */
+    
+    .rules-icons {
+        width: 50px;
+        height: 50px;
+    }
 }
 
-@media only screen and (min-width: 955px){
+@media only screen and (min-width: 959px){
     .rules-list{
         padding: 0 195px;
     }
@@ -148,7 +193,9 @@
     .item-container {
         width: 260px;
         height: 320px;
-        font-size: 22px;
+        font-size: 24px;
+        margin-top: 50px;
+        padding: 0 20px;
     }
 
     .item-n{
@@ -159,6 +206,6 @@
     .reversed-num {
         justify-self: start;
         padding-left: 10px;
-        border-radius: 0 100% 100% 0;
+        border-radius: 0 0 70% 0;
     }
 }
