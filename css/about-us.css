@@ -1,4 +1,8 @@
-.panel-about-us{}
+.panel-about-us{
+    background-image: url('../img/bg/bg-about-us.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
 
 .sticker-box{
     background-color: white;

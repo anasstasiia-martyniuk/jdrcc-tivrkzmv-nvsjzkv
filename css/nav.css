@@ -1,11 +1,5 @@
-/* .welkom-text{
-    font-size: 40vmin;
-    font-family: "IBMPlexMono-Bold";
-    width: 80vw;
-    text-align: center;
-} */
 .panel-main{
-    /* background-image: url('../img/bg/bg-main.png'); */
+    background-image: url('../img/bg/bg-main-phone.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -46,6 +40,11 @@
 }
 
 @media only screen and (min-width: 768px){
+    .panel-main {
+            background-image: url('../img/bg/bg-main.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
     .pole-top{
         left: -5px;
     }
