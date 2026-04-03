@@ -1,12 +1,10 @@
 .panel-main{
-    background-image: url('../img/bg/bg-main-phone.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
 @media only screen and (min-width: 768px){
     .panel-main {
-            background-image: url('../img/bg/bg-main.png');
             background-size: 100% 100%;
             background-repeat: no-repeat;
         }
@@ -23,13 +21,16 @@
 
 .pole {
     width: 70px;
+    height: 93vh;
     position: relative;
+    user-select: none;
 }
 
 .sign {
     position: absolute;
     z-index: 2;
     cursor: pointer;
+    user-select: none;
 }
 
 .sign__view-all{
