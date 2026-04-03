@@ -7,8 +7,8 @@
 .rules-title{
     font-size: 40px;
     text-align: center;
-    margin-bottom: 30px;
-    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-top: 40px;
 }
 
 .panel-rules > div{
@@ -45,7 +45,7 @@
 .item-container{
     width: 220px;
     height: 100px;
-    padding: 0 20px;
+    padding: 15px 20px;
     font-size: 16px;
 }
 
@@ -60,6 +60,7 @@
     border-radius: 0 100% 100% 0;
     font-family: "RockSalt-Regular";
     font-size: 10px;
+    position: absolute;
 }
 
 .reversed-num{
