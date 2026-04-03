@@ -21,7 +21,7 @@
 
 .pole {
     width: 70px;
-    height: 93vh;
+    height: 685px;
     position: relative;
     user-select: none;
 }
@@ -67,6 +67,7 @@
 
     .pole{
         width: 76px;
+        height: 750px;
     }
     .sign__view-all {
         width: 120px;
