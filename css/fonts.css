@@ -3,3 +3,7 @@
     src: url("../fonts/IBMPlexMono-Bold.ttf");
 }
 
+@font-face {
+    font-family: "RockSalt-Regular";
+    src: url("../fonts/RockSalt-Regular.ttf");
+}
